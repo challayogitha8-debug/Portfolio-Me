@@ -1,0 +1,194 @@
+/* ==========================================================================
+   RESPONSIVE STYLES
+   Breakpoints: 1440px, 1200px, 1024px, 768px, 480px, 360px
+   Ensures zero horizontal scrolling, fluid grids, and accessible touch targets
+   ========================================================================== */
+
+/* 1200px and below (Small Desktop / Large Laptop) */
+@media (max-width: 1200px) {
+  :root {
+    --container-max-width: 1040px;
+    --text-5xl: 2.75rem;
+    --text-4xl: 2rem;
+  }
+
+  .hero-grid,
+  .about-grid {
+    gap: var(--space-8);
+  }
+}
+
+/* 1024px and below (Tablet Landscape / Small Laptop) */
+@media (max-width: 1024px) {
+  :root {
+    --container-max-width: 920px;
+    --text-5xl: 2.5rem;
+    --text-3xl: 1.65rem;
+  }
+
+  .hero-grid {
+    grid-template-columns: 1fr;
+    gap: var(--space-10);
+  }
+
+  .hero-visual-card {
+    max-width: 600px;
+    margin: 0 auto;
+    width: 100%;
+  }
+
+  .about-grid {
+    grid-template-columns: 1fr;
+    gap: var(--space-8);
+  }
+
+  .contact-grid {
+    grid-template-columns: 1fr;
+    gap: var(--space-8);
+  }
+}
+
+/* 768px and below (Tablet Portrait / Large Mobile) */
+@media (max-width: 768px) {
+  :root {
+    --nav-height: 64px;
+    --space-20: 3.5rem;
+    --space-16: 2.75rem;
+    --space-12: 2rem;
+    --text-5xl: 2.15rem;
+    --text-2xl: 1.35rem;
+  }
+
+  .navbar-nav {
+    display: none;
+  }
+
+  .hamburger-btn {
+    display: flex;
+  }
+
+  .hero-name {
+    font-size: 2.25rem;
+  }
+
+  .hero-headline {
+    font-size: 1.25rem;
+  }
+
+  .hero-cta-group {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .hero-cta-group .btn {
+    width: 100%;
+  }
+
+  .about-highlights-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .timeline-wrapper::before {
+    left: 12px;
+  }
+
+  .timeline-item {
+    padding-left: 36px;
+  }
+
+  .timeline-marker {
+    left: 3px;
+    width: 18px;
+    height: 18px;
+  }
+
+  .timeline-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .timeline-meta {
+    align-items: flex-start;
+  }
+
+  .education-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .education-meta {
+    align-items: flex-start;
+  }
+
+  .projects-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .certifications-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .uiux-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* 480px and below (Standard Mobile) */
+@media (max-width: 480px) {
+  .container {
+    padding-left: var(--space-4);
+    padding-right: var(--space-4);
+  }
+
+  .hero-name {
+    font-size: 1.85rem;
+  }
+
+  .hero-description {
+    font-size: var(--text-base);
+  }
+
+  .skills-pills-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .skill-category-card,
+  .timeline-card,
+  .education-card,
+  .github-card,
+  .contact-form-card {
+    padding: var(--space-5);
+  }
+
+  .project-actions {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .project-actions .btn {
+    width: 100%;
+  }
+
+  .code-container {
+    padding: var(--space-3);
+    font-size: 0.72rem;
+  }
+}
+
+/* 360px and below (Small Mobile screens) */
+@media (max-width: 360px) {
+  :root {
+    --text-5xl: 1.65rem;
+    --text-2xl: 1.15rem;
+    --text-xl: 1.05rem;
+  }
+
+  .btn {
+    padding: 0.65rem 1rem;
+    font-size: 0.8rem;
+  }
+
+  .section-eyebrow {
+    font-size: 0.65rem;
+  }
+}
